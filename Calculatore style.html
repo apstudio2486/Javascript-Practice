@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Claculator </title>
+</head>
+<style>
+    body{
+        line-height: 24px;
+        font-family: roboto;
+        font-weight: bold;
+        text-align: center;
+    }
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .set{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .set li{
+        margin-left: 10px;
+    }
+    button{
+        padding: 10px 15px;
+    }
+    .calc_part{
+        margin-top: 50px;
+    }
+    .calc_part .calc{
+        width: 30%;
+        margin: 0 auto;
+        border: 1px solid #000;
+    }
+    .calc_part input {
+        padding: 15px;
+        margin-top: 10px;
+    }
+    .calc_part input:last-child{
+        margin-bottom: 10px;
+    }
+</style>
+<script>
+
+    function plush(sign){
+
+        var no1 = document.getElementById('N1').value;
+        var no2 = document.getElementById('N2').value;
+
+            if(sign == "+" ){
+                var ans = parseInt(no1) + parseInt(no2);
+            }
+            if(sign == "-" ){
+                var ans = parseInt(no1) - parseInt(no2);
+            }
+            if(sign == "x" ){
+                var ans = parseInt(no1) * parseInt(no2);
+            }
+            if(sign == "/" ){
+                var ans = parseInt(no1) / parseInt(no2);
+            }
+        // alert( document.getElementById('ans').innerHTML = ans )
+            document.getElementById('ans').innerHTML = ans;   
+    }    
+</script>
+
+<body>
+    <div>
+        <ul>
+            <li>Calc</li><br>
+            <li><input type="text" id="N1"></li><br>
+            <li><input type="text" id="N2"></li><br>
+        </ul>
+        <ul class="set">
+            <li><button onclick="plush('+')"> + </button></li>
+            <li><button onclick="plush('-')"> - </button></li>
+            <li><button onclick="plush('x')"> x </button></li>
+            <li><button onclick="plush('/')"> / </button></li>
+        </ul>
+        <h2 id="ans"> --x-- </h2>
+    </div>   
+</body>
+</html>

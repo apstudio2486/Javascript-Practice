@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title> Claculator </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- <script>
+        var f_value, s_value, sign;
+        function no(n){
+            document.getElementById('display').value=document.getElementById('display').value+n;
+            if( n== 'c'){
+                document.getElementById('display').value="";
+            }
+         }
+        function action(s){
+            f_val = document.getElementById('display').value;
+            s=sign;
+        }
+        function ans(){
+			s_val=document.getElementById('display').value;
+            if(sign== "+"){
+				var ans = parseInt(f_val) + parseInt(s_val);
+            }
+            document.getElementById('display').value = ans;
+        }
+        function erase(){
+            document.getElementById('display').value="";
+        }
+    </script> -->
+
+
+    <!-- <script>
+
+        var sign = "", fval , sval , res=0 , cnt=0;
+
+        function no(n)
+        {
+            document.getElementById('display').value = document.getElementById('display').value + n;
+            if(n == 'c')
+            {
+                document.getElementById('display').value = "";
+            }
+        }
+
+        function action(w)
+        {
+            sign = w;
+            fval = document.getElementById('display').value;
+            document.getElementById('display').value = "";
+            // alert(fval);
+        }
+
+        function ans()
+        {
+            sval = document.getElementById('display').value;
+            // alert(sval);
+
+            if(sign == "+")
+            {
+                res = parseInt(fval) + parseInt(sval);
+            }
+            if(sign == "-")
+            {
+                res = parseInt(fval) - parseInt(sval);
+            }
+
+            document.getElementById('display').value = res;
+        }
+
+        function erase()
+        {
+            dis = document.getElementById('display').value;
+            len = dis.substr(0,dis.length-1);
+            // alert(len)
+            document.getElementById('display').value = len;
+        }
+
+    </script> -->
+    <script>
+        var sign,fval,sval;
+
+        function erase(){
+            document.getElementById('display').value = "";
+        }
+        function no(n){
+            document.getElementById('display').value = document.getElementById('display').value + n;   
+            if(n == "c"){
+                document.getElementById('display').value = click
+            }
+        }
+        function action(s){
+            sign = s;
+            fval = document.getElementById('display').value;
+            document.getElementById('display').value = ""
+        }
+        function ans(){
+            sval = document.getElementById('display').value;
+            if(sign == "+"){
+               javab = parseInt(fval) + parseInt(sval);
+            }
+            if(sign == "-"){
+               javab = parseInt(fval) - parseInt(sval);
+            }
+            if(sign == "*"){
+               javab = parseInt(fval) * parseInt(sval);
+            }
+            if(sign == "/"){
+               javab = parseInt(fval) / parseInt(sval);
+            }
+            
+            document.getElementById('display').value = javab;
+        }
+
+    </script>
+
+</head>
+<body>
+      <div class="calc_part">
+        <div class="bg">
+            <div class="calc">
+                <table align="center" cellspacing="0" cellpadding="15" width="25%"> 
+                    <tr>
+                        <td colspan="4">
+                            <input type="text" name="" class="txt" placeholder="0" id="display" readonly>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="button" name="" value="7" onclick="no(7)">
+                        </td>
+                        <td>
+                            <input type="button" name="" value="8" onclick="no(8)">
+                        </td>
+                        <td>
+                            <input type="button" name="" value="9" onclick="no(9)">
+                        </td>
+                        <td>
+                            <input type="button" name="" value="x" onclick="action('*')">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="button" name="" value="4" onclick="no(4)">
+                        </td>
+                        <td>
+                            <input type="button" name="" value="5" onclick="no(5)">
+                        </td>
+                        <td>
+                            <input type="button" name="" value="6" onclick="no(6)">
+                        </td>
+                        <td>
+                            <input type="button" name="" value="-" onclick="action('-')">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="button" name="" value="1" onclick="no(1)">
+                        </td>
+                        <td>
+                            <input type="button" name="" value="2" onclick="no(2)">
+                        </td>
+                        <td>
+                            <input type="button" name="" value="3" onclick="no(3)">
+                        </td>
+                        <td>
+                            <input type="button" name="" value="+" onclick="action('+')">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="button" name="" value="0" onclick="no(0)">
+                        </td>
+                        <td>
+                            <input type="button" name="" value="C" onclick="no('c')">
+                        </td>
+                        <td>
+                            <input type="button" name="" value="=" onclick="ans()">
+                        </td>
+                        <td>
+                            <input type="button" name="" value="/" onclick="action('/')">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            <input type="button" name="" value="Erase" onclick="erase()">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+  
+
+    <style type="text/css">
+		.txt
+		{
+			padding: 15px;
+			width: calc(100% - 32px);
+		}
+		table
+		{
+			border: 1px red solid;
+		}
+        table tr td input{
+            cursor: pointer;
+            background-color: #f0f0f0;
+            border: none;
+        }
+		table tr td input[type="button"]
+		{
+            font-size: 20px;
+			height: 60px;
+			width: 60px;
+		}
+        table tr td input[type="button"]:last-child{
+            width: 100%;
+            color: brown;
+        }
+	</style>
+</body>
+</html>

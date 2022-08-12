@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title> bulb on/off </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    </head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        main{
+            text-align: center;
+        }
+        button{
+            padding: 15px 30px;
+        }
+    </style>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script>
+        // window.onload() {
+        //     document.getElementById('off').hide();
+        // }
+        function on(){
+            // document.getElementById('On').style.display = "none";
+            document.getElementById('bulb').src = "image/on.png";
+        }
+        function off(){
+            // document.getElementById('off').style.display = "none";
+            document.getElementById('bulb').src = "image/off.png";
+        }
+    </script>
+<body>
+    <main><img src="image/off.png" width="300" id="bulb"></main>
+    <center> 
+        <button onclick="on()" id="on"> On </button>
+        <button onclick="off()" id="off"> Off </button>
+    </center>    
+</body>
+</html> 

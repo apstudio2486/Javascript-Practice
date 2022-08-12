@@ -1,0 +1,277 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<style type="text/css">
+	
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	boddy{
+		line-height: 24px;
+		font-family: calibri;		
+	}
+	header{
+		position: fixed;
+		width: 100%;
+		z-index: 999;
+		background-color:darkgoldenrod ;
+	}
+	ul{
+		list-style: none;
+	}
+	a{
+		text-decoration: none;
+		display: block;
+	}
+	main{
+		position: relative;
+		top: 12%;
+	}
+	.menu-set{
+		text-align:center;
+	}
+	.icon a{
+
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		text-align:right;
+	}
+	.icon a .logo{
+		display: flex;
+		align-items: center;
+	}
+	.icon .logo span{
+		color: lightyellow;
+		font-size: 30px;
+		text-shadow: 0px 0px 3px #000;
+	}
+	.fas{
+		color: darkred;
+		padding: 30px;
+		font-size: 20px;
+	}
+	.option li a{
+		padding: 15px 30px;
+		margin: 15px 0;
+		color: #fff;
+		font-size: 18px;
+	}
+	.option li a:hover{
+		background-color: yellow;
+		color: darkred;
+	}
+
+</style>
+
+
+<header>
+		<div class="icon">
+			<a href="#">
+				<div class="logo"><img src="image/on.png" width="10%"><span>Electronic View</span></div>
+				<div><i class="fas fa-align-justify"></i></div>
+			</a>
+		</div>
+		<div class="menu-set">
+			<ul class="option">
+				<li><a href="#"> Home </a></li>
+				<li><a href="#"> Home </a></li>
+				<li><a href="#"> Home </a></li>
+				<li><a href="#"> Home </a></li>
+				<li><a href="#"> Home </a></li>
+			</ul>
+		</div>
+</header>
+
+	<main>
+
+		<div id="nav-container">
+		  <div id="nav">
+		    <a href="#home" class="nav-link active">Home</a>
+		    <a href="#about" class="nav-link">About</a>
+		    <a href="#work" class="nav-link">Work</a>
+		    <a href="#contact" class="nav-link">Contact</a>
+		  </div>
+		</div>
+
+		<section id="home">
+		  <p>
+		  	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		  	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		  	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		  	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		  	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		  	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		  </p>
+		</section>
+		<section id="about">
+		  <p>
+		  	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		  	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		  	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		  	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		  	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		  	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		  </p>
+		</section>
+		<section id="work">
+		  <p>
+		  	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		  	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		  	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		  	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		  	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		  	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		  </p>
+		</section>
+		<section id="contact">
+		  <p>
+		  	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		  	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		  	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		  	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		  	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		  	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		  </p>
+		</section>
+
+	</main>
+
+<style type="text/css">
+		*{
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
+#nav-container{
+  position: fixed;
+  width: 100%;
+  padding: 1em 0;
+  background-color: #fff;
+}
+
+#nav{
+  display: flex;
+  justify-content: space-evenly;
+  height: 3em;
+  line-height: 3em;
+}
+
+a:link, a:visited, a:active{
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  color: #000;  
+}
+
+a:hover{
+  color: #85D6CB;
+  transition: .5s;
+}
+
+.nav-link{
+  padding: 0 1em;
+  margin: 0 3em;
+  border-radius: 2em;
+  transition: all .4s;
+}
+
+a.active{
+  color: #fff;
+}
+
+a.nav-link.active:hover{
+  padding: 0 4em;
+  margin: 0;
+}
+
+section{
+  height: 100vh;
+}
+
+#home, a.active[href="#home"]{
+  background-color: #85D6CB;
+}
+
+#about, a.active[href="#about"]{
+  background-color: #339CC7;
+}
+
+#work, a.active[href="#work"]{
+  background-color: #0378A6;
+}
+
+#contact, a.active[href="#contact"]{
+  background-color: #005778;
+}
+
+
+
+</style>
+
+<script type="text/javascript">
+
+	$(window).scroll(function() {
+	  var sticky = $('header'),
+	    scroll = $(window).scrollTop();
+
+	  if (scroll >= 80) sticky.addClass('menu-set');
+	  else sticky.removeClass('menu-set');
+	});
+	
+	$(document).ready(function(){
+		$(".option").hide();
+		$(".fas").click(function(){
+			$(".option").slideToggle();
+			$(".fa-align-justify").toggleClass("fa-times");
+		}); 
+
+	});
+
+	$(document).ready(function(){
+
+	  var sectionIds = $('a.nav-link');
+	  	$("section")
+
+	    $(document).scroll(function(){
+	        sectionIds.each(function(){
+
+	            var container = $(this).attr('href');
+	            var containerOffset = $(container).offset().top;
+	            var containerHeight = $(container).outerHeight();
+	            var containerBottom = containerOffset + containerHeight;
+	            var scrollPosition = $(document).scrollTop();
+	    
+	            if(scrollPosition < containerBottom - 20 && scrollPosition >= containerOffset - 20){
+	                $(this).addClass('active');
+	            } else{
+	                $(this).removeClass('active');
+	            }
+	    
+	        });
+	    });
+	   
+
+
+	});
+
+
+	// $(window).scroll(function() {    // this will work when your window scrolled.
+	// 	var height = $(window).scrollTop();  //getting the scrolling height of window
+	// 	if(height  > 100) {
+	// 		$(".header").css({"position": "fixed"});
+	// 	} else{
+	// 		$(".header").css({"position": "relative"});
+	// 	}
+	// });
+
+</script>

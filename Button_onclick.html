@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>OnClick_lecture_1</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+
+<script>
+    // ========== title ============
+    function try1() {
+        document.getElementById('test').innerHTML = "Good Morning";
+    }
+    function try2() {
+        document.getElementById('test').innerHTML = "Well-come to my page.";
+    }
+
+    // ========== Square shape ============
+
+    function shape_1() {
+        document.getElementById('square').style.width = "100px";
+        document.getElementById('square').style.height = "100px";
+        document.getElementById('square').style.backgroundColor = "darkblue";
+        document.getElementById('square').style.color = "#fff";
+    }
+
+    // ========== triangle shape ============
+    
+    function shape_2() {
+        document.getElementById('triangle').style.width = "0";
+        document.getElementById('triangle').style.borderBottom = "100px solid darkblue";
+        document.getElementById('triangle').style.borderLeft= "60px solid transparent";
+        document.getElementById('triangle').style.borderRight = "60px solid transparent";
+    }
+    
+    // ========== triangle shape ============
+    
+    // function shape_round(ele){
+    //     ele.style.width = "100px";
+    //     ele.style.height = "100px";
+    //     ele.style.borderRadius = "50%";
+    //     ele.style.backgroundColor = "darkblue";
+    //     ele.style.color = "#fff";
+    // } 
+    function shape_3() 
+    {
+        document.getElementById('round').style.width = "100px";
+        document.getElementById('round').style.height = "100px";
+        document.getElementById('round').style.borderRadius = "50%";
+        document.getElementById('round').style.backgroundColor = "darkblue";
+        document.getElementById('round').style.color = "#fff";
+    }
+    
+    // ========== dimond shape ============
+
+    function shape_4() {
+        document.getElementById('dimond').style.width = "100px";
+        document.getElementById('dimond').style.height = "100px";
+        document.getElementById('dimond').style.backgroundColor = "darkblue";
+        document.getElementById('dimond').style.transform = "rotate(-45deg)";
+    }
+</script>
+
+<style>
+    button{
+        cursor: pointer;
+        border: none;  
+        background-image: linear-gradient(to right, #314755 0%, #26a0da  50%, #314755  100%);
+        color: #000;
+        padding: 10px 15px;
+        text-align: center;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;            
+        box-shadow: 0 0 20px #eee;
+        border-radius: 10px;
+    }
+    button:hover{
+        background-position: right;
+        color: #fff;
+    }
+    .title{
+        color: darkblue;
+        text-align: center;
+    }
+    .Shape{
+        margin: 0 20px;
+        display: flex;
+        align-items: center;
+    }
+    span{
+        display: block;
+        margin: 20px 0;
+    }
+    .Shape div{
+        margin: 0 20px;
+        text-align: center;
+    }
+
+</style>
+<body>
+    <div class="title">
+        <h1 id="test">Hellow..!</h1>
+        <button onmouseover="try1()" onmouseleave="try2()">Hover Me</button>
+    </div>
+    <div class="Shape">
+        <div class="Shape_1">
+            <span id="square"></span>
+            <button onclick="shape_1()">Square</button>    
+        </div>
+        <div class="Shape_2">
+            <span id="triangle"></span>
+            <button onclick="shape_2()">Triangle</button>
+        </div>
+        <div class="Shape_3">
+            <span id="round"></span>
+            <button onclick="shape_3()">round</button>
+        </div>
+        <!-- <div class="Shape_3">
+            <span id="round"></span>
+            <button onclick="shape_round(document.getElementById('round'))">round</button>
+        </div> -->
+        <div class="Shape_4">
+            <span id="dimond"></span>
+            <button onclick="shape_4()">Dimond</button>
+        </div>
+    </div>
+    
+</body>
+</html>

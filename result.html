@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Result </title>
+</head>
+
+<script>
+
+    var a=60,b=40,c=4,d=10,e=50;
+    t=a+b+c+d+e;
+    pr=t/500*100;
+
+    document.write("Student Rersult"+"<br>")
+    document.write("<hr>")
+    document.write("Sub-1"+ "="+ a+"<br>")
+    document.write("Sub-2"+ "="+ b+"<br>")
+    document.write("Sub-3"+ "="+ c+"<br>")
+    document.write("Sub-4"+ "="+ d+"<br>")
+    document.write("Sub-5"+ "="+ e+"<br>")
+    document.write("<hr>")
+    document.write("Total"+"="+ t+"<br>")
+    document.write("Pr"+""+"="+ pr+"%"+"<br>")
+    document.write("<hr>")
+    
+    if(pr>70){
+			document.write("Get Distinction")
+		}
+    if(pr<70 && 60<pr){
+        document.write("Pass With First-Class ")
+    }
+    if(pr<60 && 50<pr){
+        document.write(" Pass With Second-Class ")
+    }
+    if(pr<50 && 35<pr){
+        document.write(" Pass " + "<br>")
+    }
+
+    
+    else if ((a<35 || b<35 || c<35) || (a<35 || b<35 || d<35) || (a<35 || b<35 || e<35) || (b<35 || c<35 || d<35) || (b<35 || c<35 || e<35) || (d<35 || c<35 || a<35) || (e<35 || a<35 || c<35) || (e<35 || a<35 || d<35) || (c<35 || d<35 || e<35)){
+        document.write("<span style='color:red'>"+"Fail"+"</span>")
+    }
+    if ((a<35 || b<35) || (a<35 || c<35) || (a<35 || d<35) || (a<35 || e<35) || (b<35 || c<35) || (b<35 || d<35) || (b<35 || e<35) || (c<35 || d<35) || (c<35 || e<35) || (d<35 || e<35)){
+        document.write("<span style='color:red'>"+"ATKT"+"</span>")
+    }
+    // if ((a<35 && b<35) || (a<35 && c<35) || (a<35 && d<35) || (a<35 && e<35) || (b<35 && c<35) || (b<35 && d<35) || (b<35 && e<35) || (c<35 && d<35) || (c<35 && e<35) || (d<35 && e<35)){
+    //     document.write("<span style='color:red'>"+"ATKT"+"</span>")
+    // }
+    // if ((a<35 || b<35) || (a<35 || c<35) || (a<35 || d<35) || (a<35 || e<35) || (b<35 || c<35) || (b<35 || d<35) || (b<35 || e<35) || (c<35 || d<35) || (c<35 || e<35) || (d<35 || e<35)){
+    //     document.write("<span style='color:red'>"+"ATKT"+"</span>")
+    // }
+    // else if ((a<35 || b<35 || c<35) || (a<35 || b<35 || d<35) || (a<35 || b<35 || e<35) || (b<35 || c<35 || d<35) || (b<35 || c<35 || e<35) || (d<35 || c<35 || a<35) || (e<35 || a<35 || c<35) || (e<35 || a<35 || d<35) || (c<35 || d<35 || e<35)){
+    //     document.write("<span style='color:red'>"+"Fail"+"</span>")
+    // }
+    // else if(pr<35){
+    //     document.write("<span style ='color:red'>" + "Fail" + "</span>" + "<br>")
+    // }
+
+
+</script>
+
+<style>
+    body{
+        text-align: center;
+    }
+</style>
+
+<body>
+
+    <div>
+
+    </div>
+    
+</body>
+</html>
